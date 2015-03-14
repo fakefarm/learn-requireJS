@@ -3,16 +3,18 @@
 ## What
 [RequireJS](http://requirejs.org/) is a JavaScript file and module loader.
 
+## Notes
 
-## My Summary
+### Summary
 
 Rather than load every js file on every page, use require to manage what gets loaded, where.
-
-## Notes
+Require's goal is for you to load a single script line and let require load the rest of your scripts.
 
 ### Getting started
 
-require's goal is for you to load a single script line and let require load the rest of your scripts.
+#### Install Require
+
+[Download Require](http://requirejs.org/docs/download.html) and add it to your `head`;
 
 
     <head>
@@ -20,6 +22,11 @@ require's goal is for you to load a single script line and let require load the 
     </head>
 
 The `data-main='app'` is specifying which file is the primary file to auto load.
+
+#### Using app.js
+
+The name `app.js` is arbitrary. The file name just needs to match whatever you put in `data-main='[whatever_filename_you_want.js]'`
+There, we explain some common behavior across all pages. As I type the word 'page', I realize that my current application of require is for multi-page sites. As in, not single pages apps. 
 
 ### Requre Methods
 
@@ -29,7 +36,6 @@ The `data-main='app'` is specifying which file is the primary file to auto load.
     require
 
     config
-
 
 
 ### JQuery is a special case.
